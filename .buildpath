@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<buildpath>
-	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
-	<buildpathentry excluding=".buildpath|.project|application/|call_sequence.txt|index.php|php-doc/|phpMyAdmin/|scraper_test_page.html|taget.html|target.html|users-table.zip|vim_keys.txt" including="app/|config.js|config.php|css/|index.html|js/|libs/|login.php|logout.php|main.js|register.php|welcome.php" kind="src" path=""/>
-</buildpath>
