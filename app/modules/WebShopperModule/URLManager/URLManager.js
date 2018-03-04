@@ -4,12 +4,12 @@ define(function(require) {
 
   function URLManager(moduleContext) {
 
-    GoogleDownloader = require('GoogleDownloader');
+    Downloader = require('Downloader');
 
     this.that             = this;
     this.uRLList          = [];
     this.moduleContext    = moduleContext;
-    this.GoogleDownloader = new GoogleDownloader(this.moduleContext);
+    this.GoogleDownloader = new Downloader(this.moduleContext, 'google');
 
   }
 

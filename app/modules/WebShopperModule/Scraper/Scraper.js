@@ -10,7 +10,7 @@ define(function(require) {
  *
  */
 
-var Downloader = require('ScraperDownloader'),
+var Downloader = require('Downloader'),
     Util       = require('Util');
 
 function Scraper(moduleContext, SPM, data) {
@@ -22,7 +22,7 @@ function Scraper(moduleContext, SPM, data) {
         classname                   = '',
         prev_classname;
 
-    this.downloader                   = new Downloader(moduleContext);
+    this.downloader                   = new Downloader(moduleContext, 'scraper');
     this.Util                         = Util;
     this.node                         = SPM.node;
     var Scraper                       = this;

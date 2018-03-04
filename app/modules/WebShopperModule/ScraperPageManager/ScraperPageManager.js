@@ -3,13 +3,13 @@ define(function(require) {
   var PageReader    = require('PageReader'),
       PageClicker   = require('PageClicker'),
       PageTyper     = require('PageTyper'),
-      Downloader    = require('ScraperDownloader'),
+      Downloader    = require('Downloader'),
       Util    = require('Util'),
       Scraper = require('Scraper');
 
   function ScraperPageManager(moduleContext, node) {
 
-    this.downloader = new Downloader(moduleContext);
+    this.downloader = new Downloader(moduleContext, 'scraper');
     var pageReader, scraper, that = this;
     this.node       = node;
 

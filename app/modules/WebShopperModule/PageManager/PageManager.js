@@ -9,7 +9,7 @@ define(function(require) {
 
   function PageManager(moduleContext, webShopper) {
 
-    this.downloader = new Downloader(moduleContext);
+    this.downloader = new Downloader(moduleContext, 'plain');
     this.webShopper = webShopper;
     var pageReader, fieldSelector, that = this;
 
@@ -40,7 +40,7 @@ define(function(require) {
 
   PageManager.prototype = {
       push : function(url) {
-        this.downloader.download(url);
+        this.downloader.download(url,'plain');
       },
       getProductsFoundCount : function() {
           return totalProductsFound;
