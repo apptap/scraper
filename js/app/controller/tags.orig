@@ -1,0 +1,99 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ElementsWithAPrice	Scraper.js	/^    getElementsWithAPrice: function (productPageHTML) {$/;"	c
+FirstProduct	Scraper.js	/^    scrapeFirstProduct: function (productPageHTML) {$/;"	c
+Found	Scraper.js	/^		priceFound = (this.regex[i]).test(potentialPrice)$/;"	c
+HTML	Scraper.js	/^      this.isHTML = function(potentialHTML) {$/;"	c
+HTMLPrice	Scraper.js	/^      this.isHTMLPrice = function(potentialPrice) {$/;"	c
+Model	Scraper.js	/^    setModel: function (model) {$/;"	c
+NextProduct	Scraper.js	/^    getNextProduct: function () {},$/;"	c
+NextURL	Scraper.js	/^    getNextURL: function (pageData) {$/;"	c
+Page	Scraper.js	/^    downloadPage: function (siteList) {$/;"	c
+Page	Scraper.js	/^    scrapePage: function (productPageHTML) {$/;"	c
+Price	Scraper.js	/^      this.isPrice  = function(potentialPrice) {$/;"	c
+PriceInfo	Scraper.js	/^    getPriceInfo: function () {},$/;"	c
+ProductContainer	Scraper.js	/^    getProductContainer: function (productPageHTML) {$/;"	c
+Site	Scraper.js	/^    scrapeSite: function (productPageHTML) {$/;"	c
+Sites	Scraper.js	/^    scrapeSites: function (siteList) {$/;"	c
+StringPrice	Scraper.js	/^      this.isStringPrice = function(potentialPrice) {$/;"	c
+StruckOutPrice	Scraper.js	/^	  var isStruckOutPrice = (styles["text-decoration"] === "line-through");$/;"	c
+Validator	Scraper.js	/^    priceValidator: function() {$/;"	c
+XPath	Scraper.js	/^	    theXPath = getXPathForElement($(elem)[0],document);$/;"	c
+XPathForElement	Scraper.js	/^    getXPathForElement: function(el, xml) {$/;"	c
+controllerBase	Scraper.js	/^  function controllerBase(id) {$/;"	f
+data	Scraper.js	/^        data: {url: siteList[0]},$/;"	o
+define	Scraper.js	/^define(['jquery', 'bootstrap'], function ($) {$/;"	f
+define	scraper_controller.js	/^define(['.\/Scraper'], function (Scraper) {$/;"	f
+downloadPage	Scraper.js	/^    downloadPage: function (siteList) {$/;"	m
+filter	Scraper.js	/^      $contains = $(':contains($),:contains(€),:contains(£)', $(doc)).filter(function() {return $(this).children().length === 0;});$/;"	f
+filter	Scraper.js	/^      var $filter = $contains.filter(function(n, elem) {$/;"	f
+for	Scraper.js	/^		    for(curAmount in this.amount){$/;"	f
+for	Scraper.js	/^	      for(curSuffix in this.suffix){$/;"	f
+for	Scraper.js	/^	  for (var i=0; i<ncs.length; ++i) {$/;"	f
+for	Scraper.js	/^	  for(curCurrency in this.currency){$/;"	f
+for	Scraper.js	/^	for (elem2 = 0; elem2 < elementsWithAPriceContained.xpaths.length; elem2++) {$/;"	f
+for	Scraper.js	/^	for(curPrefix in this.prefix){$/;"	f
+for	Scraper.js	/^      \/\/for (i = 0; i < siteList.length; i = i + 1) {$/;"	f
+for	Scraper.js	/^      for (elem1 = 0; elem1 < elementsWithAPriceContained.xpaths.length; elem1++) {$/;"	f
+function	Scraper.js	/^        success: function (productPageHTML) {$/;"	f
+function	Scraper.js	/^      this.isHTML = function(potentialHTML) {$/;"	f
+function	Scraper.js	/^      this.isHTMLPrice = function(potentialPrice) {$/;"	f
+function	Scraper.js	/^      this.isPrice  = function(potentialPrice) {$/;"	f
+function	Scraper.js	/^      this.isStringPrice = function(potentialPrice) {$/;"	f
+function	Scraper.js	/^    downloadPage: function (siteList) {$/;"	f
+function	Scraper.js	/^    getElementsWithAPrice: function (productPageHTML) {$/;"	f
+function	Scraper.js	/^    getNextProduct: function () {},$/;"	f
+function	Scraper.js	/^    getNextURL: function (pageData) {$/;"	f
+function	Scraper.js	/^    getPriceInfo: function () {},$/;"	f
+function	Scraper.js	/^    getProductContainer: function (productPageHTML) {$/;"	f
+function	Scraper.js	/^    getXPathForElement: function(el, xml) {$/;"	f
+function	Scraper.js	/^    get_common_ancestor: function(a, b) {$/;"	f
+function	Scraper.js	/^    priceValidator: function() {$/;"	f
+function	Scraper.js	/^    scrapeFirstProduct: function (productPageHTML) {$/;"	f
+function	Scraper.js	/^    scrapePage: function (productPageHTML) {$/;"	f
+function	Scraper.js	/^    scrapeSite: function (productPageHTML) {$/;"	f
+function	Scraper.js	/^    scrapeSites: function (siteList) {$/;"	f
+function	Scraper.js	/^    setModel: function (model) {$/;"	f
+getElementsWithAPrice	Scraper.js	/^    getElementsWithAPrice: function (productPageHTML) {$/;"	m
+getNextProduct	Scraper.js	/^    getNextProduct: function () {},$/;"	m
+getNextURL	Scraper.js	/^    getNextURL: function (pageData) {$/;"	m
+getPriceInfo	Scraper.js	/^    getPriceInfo: function () {},$/;"	m
+getProductContainer	Scraper.js	/^    getProductContainer: function (productPageHTML) {$/;"	m
+getStyle	Scraper.js	/^	function getStyle(node, doc) {$/;"	f
+getView	Scraper.js	/^	function getView(node, doc) {$/;"	f
+getXPathForElement	Scraper.js	/^	function getXPathForElement(el, xml) {$/;"	f
+getXPathForElement	Scraper.js	/^    getXPathForElement: function(el, xml) {$/;"	m
+get_common_ancestor	Scraper.js	/^    get_common_ancestor: function(a, b) {$/;"	m
+if	Scraper.js	/^		else if(!hasPrefix && hasSuffix) {$/;"	f
+if	Scraper.js	/^		else if(hasPrefix && !hasSuffix){$/;"	f
+if	Scraper.js	/^		if(hasPrefix && hasSuffix) {$/;"	f
+if	Scraper.js	/^		if(priceFound !== null) {$/;"	f
+if	Scraper.js	/^	      if (tempitem2.nodeType === 1 && tempitem2.nodeName === el.nodeName) { \/\/ If it is ELEMENT_NODE of the same name$/;"	f
+if	Scraper.js	/^	    if(el !== null) {$/;"	f
+if	Scraper.js	/^	  if (node && node.nodeType==1) {$/;"	f
+if	Scraper.js	/^	  if (tempitem2.nodeType === 1 && tempitem2.nodeName === el.nodeName) { \/\/ If it is ELEMENT_NODE of the same name$/;"	f
+if	Scraper.js	/^	  if(isStruckOutPrice) {$/;"	f
+if	Scraper.js	/^	if(el !== null) {$/;"	f
+if	Scraper.js	/^          if(elem1 !== elem2) {$/;"	f
+isHTML	Scraper.js	/^      this.isHTML = function(potentialHTML) {$/;"	f
+isHTMLPrice	Scraper.js	/^      this.isHTMLPrice = function(potentialPrice) {$/;"	f
+isPrice	Scraper.js	/^      this.isPrice  = function(potentialPrice) {$/;"	f
+isStringPrice	Scraper.js	/^      this.isStringPrice = function(potentialPrice) {$/;"	f
+load	Scraper.js	/^          $('iframe#target_site').load(function() {$/;"	f
+map	Scraper.js	/^	    var images   = $('body').find("img").map(function() { return this.src; }).get();$/;"	f
+priceValidator	Scraper.js	/^    priceValidator: function() {$/;"	m
+prototype	Scraper.js	/^  controllerBase.prototype = {$/;"	o
+scrapeFirstProduct	Scraper.js	/^    scrapeFirstProduct: function (productPageHTML) {$/;"	m
+scrapePage	Scraper.js	/^    scrapePage: function (productPageHTML) {$/;"	m
+scrapeSite	Scraper.js	/^    scrapeSite: function (productPageHTML) {$/;"	m
+scrapeSites	Scraper.js	/^    scrapeSites: function (siteList) {$/;"	m
+setModel	Scraper.js	/^    setModel: function (model) {$/;"	m
+success	Scraper.js	/^        success: function (productPageHTML) {$/;"	m
+while	Scraper.js	/^	    while(tempitem2) {$/;"	f
+while	Scraper.js	/^	  while(el !== xml.documentElement) {   $/;"	f
+while	Scraper.js	/^	while(tempitem2) {$/;"	f
+while	Scraper.js	/^      while(el !== xml.documentElement) {   $/;"	f

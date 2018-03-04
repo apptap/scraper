@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>localhost</title>
+
+    <!-- Bootstrap -->
+    <!-- optional static style definition to render the presentation fast,
+         before styling get applied via JS code.
+         See 'src/modules/baseModule/theme/component.js' to see dynamic stylesheet
+         setup on themes, TODO find a better way to supportstyles -->
+         <link rel="stylesheet" type="text/css" href="./app/modules/baseModule/theme/bootstrap/css/custom.css" id="themeStylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements
+         and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="http://cdnjs.cloudflare.com/ajax/libs/json2/20110223/json2.js"></script>
+    <script type="text/javascript" charset="utf-8" src="http://explorercanvas.googlecode.com/svn/trunk/excanvas.js"></script>
+    <![endif]-->
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+    <body>
+
+        <section id="page-content">
+
+            <header class="main-menu">
+            </header>
+
+            <section class="lower-header-content">
+                <section class="appcontent"></section>
+            </section>
+
+            <footer>
+                <section class="footer"></section>
+            </footer>
+
+        </section>
+
+        <section class="login"></section>
+
+        <!-- we use jquery and underscore as 2 utilities in the BoilerplateJS core -->
+        <script src="./libs/jquery/jquery-min.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="./libs/underscore/underscore-1.3.3.js" type="text/javascript" charset="utf-8"></script>
+        <!-- following libraries are used by the UrlController for client routing and browser history --> 
+        <script src="./libs/signals/signals.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./libs/crossroads/crossroads.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./libs/hasher/hasher.min.js" type="text/javascript" charset="utf-8"></script>
+        <!-- following library is used by the Mediator class for pub-sub event handling -->
+        <script src="./libs/pubsub/pubsub-20120708.js" type="text/javascript" charset="utf-8"></script>
+        <!-- sample UI component implementations use knockout for MVVM bindings, but not necessary for BPJS core --> 
+        <script src="./libs/knockout/knockout-2.1.0pre.js" type="text/javascript" charset="utf-8"></script>
+        <!-- backboneTodo sample UI component use following library, not necessary for BPJS core -->
+        <script src="./libs/backbone/backbone-min-0.9.2.js" type="text/javascript" charset="utf-8"></script>
+        <!-- following are used by complex UI component, salesDashboard. not needed by BPJS core -->
+        <script src="./libs/jquery/jstree/jstree-1.0-rc3.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./libs/flot/jquery.flot.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./libs/flot/jquery.flot.resize.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Used by BargainFinder module -->
+        <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+        <script src="./libs/jquery/xpath/jqueryplugin.js"></script>
+        <script src="./libs/jquery-ui/jquery-ui.min.js"></script>
+        <script src="./libs/spin/spin.min.js"></script>
+
+        <!--
+        <script type="text/javascript">
+                var jqui = escape("<script src='./libs/jquery-ui/jquery-ui.min.js'></script>");
+          (window.jQuery.ui === undefined) && document.write(unescape(jqui)));
+        </script>
+        -->
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="./app/modules/baseModule/theme/bootstrap/js/bootstrap.min.js"></script>
+        <!-- following is the main entry script to the application code. we use requirejs to load main.js -->
+        <script type="text/javascript" data-main="main.js" src="./libs/require/require.js"></script>
+    </body>
+</html>

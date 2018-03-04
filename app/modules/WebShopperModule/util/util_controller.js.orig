@@ -1,0 +1,4 @@
+define(['./Ut'], function (Util) {
+    var util = new Ut();
+    return util;
+});

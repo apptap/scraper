@@ -1,0 +1,55 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?><!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Autoscraper</title>
+
+	<link rel="stylesheet" type="text/css" href="http://lightworks/codeigniterapp/css/style.css" />
+
+	<script type='text/javascript' src='http://lightworks/codeigniterapp/js/jquery-3.1.0.min.js'></script>
+
+	<script>
+		$(document).ready(function(){   
+
+		    // Download Page, save to local webspace,
+		    // display in frame.
+		    $("#send").click(function()
+		    {       
+		     $.ajax({
+			 type: "POST",
+			 url: "<?php echo base_url(); ?>" + "index.php/scraper", 
+			 data: {url: $("#URL").val()},
+			 dataType: "text",  
+			 cache:false,
+			 success: 
+			      function(data){
+				$('#target_site').attr('src', 'http://lightworks/codeigniterapp/target_page/target.html');
+			      }
+			  });
+		     return false;
+		    });
+		 });
+	</script>
+
+</head>
+<body>
+
+<div id="container">
+	<h1>Scraper Trainer</h1>
+	<div id="body" style='border-color: blue; border-style: dashed; border-width: 5px;'>
+	<?php
+	//echo form_open(base_url() . 'index.php/scraper');
+	echo form_open();
+	echo form_input('URL', 'http://www.freelancers.net','id=URL');
+	echo form_button('','Fetch URL','id=send');
+	echo form_close();
+	?>
+	<iframe id='target_site' style='border-color: green; border-style: dashed; border-width: 5px;' width=800 height=600></iframe>
+	</div>
+</div>
+
+</body>
+</html>

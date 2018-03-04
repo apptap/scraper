@@ -1,0 +1,10 @@
+<label for="url">Enter URL or Search Terms: </label><form id="bargainfinder_form" action="#"><input name="url_box" id="url_box" type="text" size="40" placeholder="e.g. Playstation 4" /></form>
+
+<select id="session_select">
+  <option>or select session</option>
+</select>
+
+<button data-bind='click: function(data, event) { goShopping($("#url_box").val()) }' >Go Shopping</button>
+<br />
+
+<iframe src="about:blank" id="target_site" sandbox="allow-scripts allow-same-origin allow-modals" style="height: 580px; width:100%;"> </iframe>

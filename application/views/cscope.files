@@ -1,0 +1,12 @@
+./errors/cli/error_404.php
+./errors/cli/error_db.php
+./errors/cli/error_exception.php
+./errors/cli/error_general.php
+./errors/cli/error_php.php
+./errors/html/error_404.php
+./errors/html/error_db.php
+./errors/html/error_exception.php
+./errors/html/error_general.php
+./errors/html/error_php.php
+./welcome_message.php
+./main.php

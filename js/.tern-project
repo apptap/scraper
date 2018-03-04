@@ -1,0 +1,14 @@
+{
+  "libs": [
+    ],
+  "loadEagerly": [
+"/home/chronos/Downloads/www/js/lib/jquery.js",
+"/home/chronos/Downloads/www/js/lib/require.js"
+    ],
+  "plugins": {
+      "requirejs": {
+            "baseURL": "./lib",
+            "paths": {}
+          }
+    }
+}

@@ -1,0 +1,90 @@
+// I have no idea why Coderwall is putting a <a href="..."> in here.
+@import "bootstrap";
+
+
+section[id='page-content'] { @extend .container; }
+
+body > header { @extend .page-header;
+  p { @extend .lead; }
+}
+
+header {
+        padding-top: 5px;
+        margin: 0px auto;
+  nav {
+        @extend .navbar;
+        @extend .navbar-default;
+    ul {
+         @extend .nav;
+         @extend .navbar-nav;
+      li {
+      }
+    }
+  }
+}
+
+a.site-logo {
+    background: url(../images/logo.png) no-repeat;
+    display: inline-block;
+    width: 184px;
+    height: 35px;
+    float: left;
+}
+
+body {
+        margin: 0px !important;
+        padding: 0px !important;
+}
+
+#bargainfinder_form {
+
+    display: inline;
+
+}
+
+li.theme, li.language {
+    float: left;
+    position: relative;
+    display: block;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+li.theme a, li.language a {
+    box-sizing: border-box ;
+    clear: both ;
+    color: rgb(38, 38, 38) ;
+    cursor: auto ;
+    display: block ;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif ;
+    font-size: 14px ;
+    font-weight: normal ;
+    height: 26px ;
+    line-height: 20px ;
+    list-style-image: none ;
+    list-style-position: outside ;
+    list-style-type: none ;
+    outline-color: rgb(38, 38, 38) ;
+    outline-style: none ;
+    outline-width: 0px ;
+    padding-bottom: 3px ;
+    padding-left: 20px ;
+    padding-right: 20px ;
+    padding-top: 3px ;
+    position: relative ;
+    text-align: left ;
+    text-decoration-color: rgb(38, 38, 38) ;
+    text-decoration-line: none ;
+    text-decoration-style: solid ;
+    text-size-adjust: 100% ;
+    white-space: nowrap ;
+    width: 163px ;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0) ;
+}
+
+
+li.theme a:hover, li.language a:hover {
+    color: #262626;
+    background-color: #f5f5f5;
+    outline: 0;
+}

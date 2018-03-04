@@ -1,0 +1,2453 @@
+cscope 15 /var/www/scraper.local/htdocs/js/app/controller               0000013103
+	@Scraper.js
+
+9 
+defše
+(['jqu”y', 'boÙ¡¿p'], 
+	$funùiÚ
+ (
+$
+) {
+
+13 
+funùiÚ
+ 
+	`cÚŒŞËrBa£
+(
+id
+) {
+
+14 
+this
+.
+id
+ = id;
+
+16 
+this
+.
+s™eLi¡
+ = [
+
+25 
+this
+.
+ut
+ = 
+nuÎ
+;
+
+26 
+this
+.
+cu¼’tProduù
+ = 
+nuÎ
+;
+
+27 
+this
+.
+d©a
+ = 
+nuÎ
+;
+
+28 
+this
+.
+i
+ = 0;
+
+30 
+v¬
+ 
+th©
+ = 
+this
+;
+
+32 
+	`$
+('#g‘_d—ls').
+	`şick
+(
+	`funùiÚ
+(){ 
+th©
+.
+	`g‘D—ls
+(); });
+
+35 
+cÚŒŞËrBa£
+.
+´ÙÙy³
+ = {
+
+36 
+g‘D—ls
+: 
+	`funùiÚ
+() {
+
+37 ià(
+this
+.
+i
+ <his.
+s™eLi¡
+.
+Ëngth
+) {
+
+38 
+this
+.
+	`dowÆßdPage
+Ñhis.
+s™eLi¡
+[this.
+i
+]);
+
+39 
+this
+.
+i
+++;
+
+41 
+	`®”t
+("getDeals(): All sites have been…rocessed.");
+
+45 
+£tMod–
+: 
+	`funùiÚ
+ (
+mod–
+) {
+
+46 
+this
+.
+mod–
+ = model;
+
+49 
+£tUt
+: 
+	`funùiÚ
+ (
+ut
+) {
+
+50 
+this
+.
+ut
+ = util;
+
+53 
+v®id©eCÚš”HighlightChdEËms
+: 
+	`funùiÚ
+ (
+$cÚšs
+) {
+
+54 ià(
+$cÚšs
+.
+jqu”y
+) {
+
+55 
+$cÚšs
+.
+	`—ch
+(
+	`funùiÚ
+(è{ 
+this
+.
+¡yË
+.
+cŞÜ
+ = 'pu½Ë';his.¡yË.
+backgroundCŞÜ
+ = 'black'; });
+
+57 
+wšdow
+.
+cÚsŞe
+.
+	`log
+("getElementsWithAPrice(): Could‚ot find‡ currency symbol,„eturning.");
+
+58  
+çl£
+;
+
+60  
+Œue
+;
+
+63 
+f‹rPriûs
+: 
+	`funùiÚ
+ (
+$cÚšs
+, 
+x·ths
+) {
+
+65 
+v¬
+ 
+th©
+ = 
+this
+;
+
+67 
+v¬
+ 
+$f‹r
+ = 
+$cÚšs
+.
+	`f‹r
+(
+	`funùiÚ
+(
+n
+, 
+–em
+) {
+
+69 
+v¬
+ 
+»gex
+ = /^.*([
+$
+â‚¬Â£]\
+d
+{1,3}(,?\d{3})?(\.\d{2})?)/
+gm
+;
+
+73 
+v¬
+ 
+´iû
+ = 
+	`$
+(
+–em
+).
+	`‹xt
+().
+	`m©ch
+(
+»gex
+);
+
+74 
+v¬
+ 
+™ems_found
+ = 0;
+
+76 if(!(
+´iû
+ ==ğ
+nuÎ
+)){
+
+77 
+™ems_found
+++;
+
+78 
+v¬
+ 
+¡yËs
+ = 
+th©
+.
+ut
+.
+	`g‘StyË
+(
+	`$
+(
+–em
+)[0], 
+docum’t
+);
+
+79 
+v¬
+ 
+isSŒuckOutPriû
+ = (
+¡yËs
+["text-decoration"] === "line-through");
+
+81 if(
+isSŒuckOutPriû
+) {
+
+84 
+v¬
+ 
+images
+ = 
+	`$
+('body').
+	`fšd
+("img").
+	`m­
+(
+	`funùiÚ
+(è{  
+this
+.
+¤c
+; }).
+	`g‘
+();
+
+85 
+v¬
+ 
+theXP©h
+ = 
+nuÎ
+;
+
+87 
+	`$
+(
+–em
+)[0].
+¡yË
+.
+ouše
+ = 'lime dashed 2px';
+
+88 
+theXP©h
+ = 
+th©
+.
+ut
+.
+	`g‘XP©hFÜEËm’t
+(
+	`$
+(
+–em
+)[0],
+docum’t
+);
+
+90 
+x·ths
+.
+	`push
+(
+theXP©h
+);
+
+91  
+Œue
+;
+
+94 
+cÚsŞe
+.
+	`log
+("getElementsWithAPrice(): $contains.filter(): Price is‚ull...");
+
+95  
+çl£
+;
+
+98  
+$f‹r
+;
+
+101 
+g‘EËm’tsW™hAPriû
+: 
+	`funùiÚ
+ (
+´oduùPageHTML
+) {
+
+102 
+wšdow
+.
+cÚsŞe
+.
+	`log
+("getElementsWithAPrice()");
+
+105 
+v¬
+ 
+x·ths
+ = [],
+
+106 
+doc
+ = 
+docum’t
+.
+	`g‘EËm’tsByTagName
+('iäame')[0].
+cÚ‹ÁWšdow
+.document,
+
+107 
+$cÚšs
+ = 
+	`$
+(':cÚšs(Â£)', $(
+doc
+)).
+	`f‹r
+(
+	`funùiÚ
+(è{ $(
+this
+).
+	`chd»n
+().
+Ëngth
+ === 0;});
+
+109 ià(!
+this
+.
+	`v®id©eCÚš”HighlightChdEËms
+(
+$cÚšs
+)è{  
+nuÎ
+; }
+
+112 
+f‹r
+: 
+this
+.
+	`f‹rPriûs
+(
+$cÚšs
+, 
+x·ths
+),
+
+113 
+x·ths
+: xpaths
+
+117 
+dowÆßdPage
+: 
+	`funùiÚ
+ (
+s™eURL
+) {
+
+118 
+v¬
+ 
+theSü­”
+ = 
+this
+;
+
+119 
+$
+.
+	`ajax
+({
+
+120 
+ty³
+: "POST",
+
+121 
+u¾
+: "http://scraper.local/scraper.html",
+
+122 
+d©a
+: {
+u¾
+: 
+s™eURL
+},
+
+123 
+d©aTy³
+: "html",
+
+124 
+ÿche
+: 
+çl£
+,
+
+125 
+sucûss
+: 
+	`funùiÚ
+ (
+´oduùPageHTML
+) {
+
+126 
+v¬
+ 
+iäame
+ = 
+docum’t
+.
+	`g‘EËm’tsByTagName
+('iframe')[0];
+
+128 
+	`$
+('iäame#rg‘_s™e').
+	`lßd
+(
+	`funùiÚ
+() {
+
+129 
+theSü­”
+.
+	`sü­ePage
+(
+´oduùPageHTML
+);
+
+132 
+iäame
+.
+¤c
+ = "http://scraper.local/target.html";
+
+137 
+g‘GCALi¡
+: 
+	`funùiÚ
+ () {
+
+139 
+v¬
+ 
+–em1
+, 
+–em2
+ = 
+nuÎ
+;
+
+140 
+v¬
+ 
+–em’tsW™hAPriûCÚšed
+ = 
+this
+.
+	`g‘EËm’tsW™hAPriû
+(
+´oduùPageHTML
+),
+
+141 
+numb”OfPriûs
+ = 
+–em’tsW™hAPriûCÚšed
+.
+x·ths
+.
+Ëngth
+,
+
+142 
+gÿs
+ = [];
+
+143 
+´iû1
+, 
+´iû2
+,
+
+144 
+x·th1
+, 
+x·th2
+, 
+gÿ
+;
+
+147 if(
+–em’tsW™hAPriûCÚšed
+ =ğ
+nuÎ
+) {
+
+148 
+wšdow
+.
+cÚsŞe
+.
+	`log
+("getProductContainer(): Could‚ot find‡ currency symbol,„eturning.");
+
+149  
+nuÎ
+;
+
+152 ifĞ
+numb”OfPriûs
+ === 0){
+
+153 
+cÚsŞe
+.
+	`log
+("getProductContainer(): No Prices Found!,„eturning.");
+
+154  
+nuÎ
+;
+
+157 
+–em1
+ = 0;ƒËm1 < 
+numb”OfPriûs
+;ƒlem1++) {
+
+158 
+–em2
+ = 0;ƒËm2 < 
+numb”OfPriûs
+;ƒlem2++) {
+
+160 if(
+–em1
+ !=ğ
+–em2
+) {
+
+161 
+´iû1
+ = 
+–em’tsW™hAPriûCÚšed
+.
+f‹r
+[
+–em1
+];
+
+162 
+´iû2
+ = 
+–em’tsW™hAPriûCÚšed
+.
+f‹r
+[
+–em2
+];
+
+163 
+x·th1
+ = 
+–em’tsW™hAPriûCÚšed
+.
+x·ths
+[
+–em1
+];
+
+164 
+x·th2
+ = 
+–em’tsW™hAPriûCÚšed
+.
+x·ths
+[
+–em2
+];
+
+166 if(
+msg_shown_couÁ
+ < 1){
+
+167 
+cÚsŞe
+.
+	`log
+("g‘ProduùCÚš”(): usšg fœ¡ m‘hod - g‘XP©h2..." + 
+´iû2
+);
+
+168 
+msg_shown_couÁ
+++;
+
+170 
+gÿ
+ = 
+this
+.
+ut
+.
+	`g‘XP©h2
+Ñhis.ut.
+	`g‘_commÚ_ªû¡Ü
+(
+´iû1
+, 
+´iû2
+)[0]);
+
+171 if(
+gÿ
+ =ğ
+undefšed
+) {
+
+172 if(
+msg_shown_couÁ
+ < 2){
+
+173 
+cÚsŞe
+.
+	`log
+("g‘ProduùCÚš”(): usšg secÚd m‘hod - g‘XP©hFÜEËm’t..." + 
+´iû2
+);
+
+174 
+msg_shown_couÁ
+++;
+
+176 
+gÿ
+ = 
+this
+.
+ut
+.
+	`g‘XP©hFÜEËm’t
+Ñhis.ut.
+	`g‘_commÚ_ªû¡Ü
+(
+´iû1
+, 
+´iû2
+)[0], 
+doc
+);
+
+178 if(
+gÿ
+ =ğ
+undefšed
+) {
+
+179 if(
+msg_shown_couÁ
+ < 3){
+
+180 
+cÚsŞe
+.
+	`log
+("g‘ProduùCÚš”(): usšghœd m‘hod - g‘XP©h..." + 
+´iû2
+);
+
+181 
+msg_shown_couÁ
+++;
+
+183 
+gÿ
+ = 
+this
+.
+ut
+.
+	`g‘XP©h
+Ñhis.ut.
+	`g‘_commÚ_ªû¡Ü
+(
+´iû1
+, 
+´iû2
+)[0]);
+
+185 if(
+gÿ
+ =ğ
+undefšed
+) {
+
+186 if(
+msg_shown_couÁ
+ < 4){
+
+187 
+cÚsŞe
+.
+	`log
+("g‘ProduùCÚš”(): cª'ˆfšdhcommÚ‡nû¡Ü! R‘uºšg..." + 
+´iû2
+);
+
+188  
+nuÎ
+;
+
+191 
+gÿs
+.
+	`push
+(
+gÿ
+);
+
+195  
+gÿs
+;
+
+198 
+g‘ProduùCÚš”
+: 
+	`funùiÚ
+ (
+´oduùPageHTML
+) {
+
+199 
+v¬
+ 
+doc
+ = 
+docum’t
+.
+	`g‘EËm’tsByTagName
+('iäame')[0].
+cÚ‹ÁWšdow
+.document,
+
+200 
+msg_shown_couÁ
+ = 0,
+
+201 
+highe¡V®
+ = 0,
+
+202 
+i
+ = 0,
+
+203 
+com´es£d
+ = 
+nuÎ
+,
+
+204 
+cu¼V®
+ = 
+nuÎ
+,
+
+205 
+´evV®
+ = 
+nuÎ
+,
+
+206 
+x·th
+ = 
+nuÎ
+,
+
+207 
+–em
+ = 
+nuÎ
+;
+
+209 
+cÚsŞe
+.
+	`log
+("getProductContainer(): calculatinghe xpath forƒach common‡ncestor‡…air ofƒlements share...");
+
+210 
+com´es£d
+ = 
+this
+.
+ut
+.
+	`com´essA¼ay
+Ñhis.
+	`g‘GCALi¡
+());
+
+212 if(
+com´es£d
+ ==ğ
+nuÎ
+) {
+
+213 
+cÚsŞe
+.
+	`log
+("getProductContainer(): compressed ===‚ull!„eturning...");
+
+214  
+nuÎ
+;
+
+221 if(
+com´es£d
+.
+Ëngth
+ > 1) {
+
+222 
+i
+ = 0; i < 
+com´es£d
+.
+Ëngth
+ - 1; i++) {
+
+223 
+´evV®
+ = 
+com´es£d
+[
+i
+].
+couÁ
+;
+
+224 
+cu¼V®
+ = 
+com´es£d
+[
+i
++1].
+couÁ
+;
+
+226 if((
+cu¼V®
+ > 
+highe¡V®
+è| (
+´evV®
+ > highestVal)) {
+
+227 if(
+cu¼V®
+ > 
+´evV®
+) {
+
+228 
+highe¡V®
+ = 
+cu¼V®
+;
+
+229 
+x·th
+ = 
+com´es£d
+[
+i
++1].
+v®ue
+;
+
+231 if(
+cu¼V®
+ < 
+´evV®
+) {
+
+232 
+highe¡V®
+ = 
+´evV®
+;
+
+233 
+x·th
+ = 
+com´es£d
+[
+i
+].
+v®ue
+;
+
+241 
+cÚsŞe
+.
+	`log
+("g‘ProduùCÚš”(): com´es£d[]: " + 
+com´es£d
+);
+
+242 if(
+com´es£d
+[0] =ğ
+undefšed
+){
+
+243 
+cÚsŞe
+.
+	`log
+("getProductContainer(): compressed[0] == undefined.\n" +
+
+245  
+nuÎ
+;
+
+247 
+highe¡V®
+ = 
+com´es£d
+[0].
+couÁ
+;
+
+248 
+x·th
+ = 
+com´es£d
+[0].
+v®ue
+;
+
+252 
+–em
+ = 
+	`$
+(
+doc
+).
+	`x·thEv®u©e
+Ğ
+x·th
+ );
+
+254 ià(
+–em
+ !ğ
+nuÎ
+ &&ƒËm[0] !ğ
+undefšed
+) {
+
+255 
+–em
+[0].
+¡yË
+.
+ouše
+ = 'blue dashed 4px';
+
+256 
+–em
+[0].
+¡yË
+.
+backgroundCŞÜ
+ = 'black';
+
+258 
+cÚsŞe
+.
+	`log
+("elem ==‚ull!");
+
+260  
+–em
+;
+
+263 
+sü­eProduùs
+: 
+	`funùiÚ
+ (
+´oduùPageHTML
+) {
+
+264 
+v¬
+ 
+´oduùCÚš”
+ = 
+nuÎ
+,
+
+265 
+$cÚšs
+ = 
+nuÎ
+,
+
+266 
+$f‹r
+ = 
+nuÎ
+,
+
+267 
+iäame
+ = 
+docum’t
+.
+	`g‘EËm’tsByTagName
+('iframe')[0],
+
+268 
+doc
+ = 
+iäame
+.
+cÚ‹ÁWšdow
+.
+docum’t
+,
+
+269 
+–ems
+ = {},
+
+270 
+x·ths
+ = [],
+
+271 
+i
+ = 0,
+
+272 
+msg
+ = "",
+
+273 
+th©
+ = 
+this
+;
+
+275 
+wšdow
+.
+cÚsŞe
+.
+	`log
+("scrapeProducts(productPageHTML):");
+
+277 
+´oduùCÚš”
+ = 
+this
+.
+	`g‘ProduùCÚš”
+(
+´oduùPageHTML
+);
+
+279 if(
+´oduùCÚš”
+ ==ğ
+nuÎ
+){
+
+280 
+cÚsŞe
+.
+	`log
+("scrapeProducts(): Can't find…roduct container,„eturningƒmpty handed...");
+
+281  
+nuÎ
+;
+
+285 
+´oduùCÚš”
+.
+	`chd»n
+().
+	`—ch
+(
+	`funùiÚ
+(){
+
+291 
+$cÚšs
+ = 
+	`$
+(':cÚšs(Â£)', $(
+this
+)).
+	`f‹r
+(
+	`funùiÚ
+(è{ $Ñhis).
+	`chd»n
+().
+Ëngth
+ === 0;});
+
+293 ià(
+$cÚšs
+ !=ğ
+nuÎ
+){
+
+296 
+$cÚšs
+.
+	`—ch
+(
+	`funùiÚ
+(è{ 
+this
+.
+¡yË
+.
+cŞÜ
+ = 'Üªge';his.¡yË.
+backgroundCŞÜ
+ = 'teal'; });
+
+299 
+wšdow
+.
+cÚsŞe
+.
+	`log
+("scrapeProducts(): Could‚ot find‡ currency symbol,„eturning.");
+
+300  
+nuÎ
+;
+
+303 
+$f‹r
+ = 
+$cÚšs
+.
+	`f‹r
+(
+	`funùiÚ
+(
+n
+, 
+–em
+) {
+
+305 
+v¬
+ 
+»gex
+ = /^([
+$
+â‚¬Â£]\
+d
+{1,3}(,?\d{3})?(\.\d{2})?)/
+gm
+;
+
+309 
+v¬
+ 
+´iû
+ = 
+	`$
+(
+–em
+).
+	`‹xt
+().
+	`m©ch
+(
+»gex
+);
+
+310 
+v¬
+ 
+™ems_found
+ = 0;
+
+312 if(!(
+´iû
+ ==ğ
+nuÎ
+)){
+
+313 
+™ems_found
+++;
+
+314 
+v¬
+ 
+¡yËs
+ = 
+th©
+.
+ut
+.
+	`g‘StyË
+(
+	`$
+(
+–em
+)[0], 
+docum’t
+);
+
+315 
+v¬
+ 
+isSŒuckOutPriû
+ = (
+¡yËs
+["text-decoration"] === "line-through");
+
+317 if(
+isSŒuckOutPriû
+) {
+
+320 
+v¬
+ 
+images
+ = 
+	`$
+('body').
+	`fšd
+("img").
+	`m­
+(
+	`funùiÚ
+(è{  
+this
+.
+¤c
+; }).
+	`g‘
+();
+
+321 
+v¬
+ 
+theXP©h
+ = 
+nuÎ
+;
+
+323 
+	`$
+(
+–em
+)[0].
+¡yË
+.
+ouše
+ = 'red dashed 2px';
+
+324 
+theXP©h
+ = 
+th©
+.
+ut
+.
+	`g‘XP©hFÜEËm’t
+(
+	`$
+(
+–em
+)[0],
+docum’t
+);
+
+326 
+x·ths
+.
+	`push
+(
+theXP©h
+);
+
+327  
+Œue
+;
+
+330 
+cÚsŞe
+.
+	`log
+("sü­eProduùs(): $cÚšs.f‹r(): NÙ‡…riû -„ejeùšg\n" + 
+	`$
+(
+–em
+).
+	`‹xt
+());
+
+331  
+çl£
+;
+
+336  
+Œue
+;
+
+339 
+g‘NextURL
+: 
+	`funùiÚ
+ (
+·geD©a
+) {
+
+343 
+g‘NextProduù
+: 
+	`funùiÚ
+ () {},
+
+345 
+g‘PriûInfo
+: 
+	`funùiÚ
+ () {},
+
+347 
+sü­ePage
+: 
+	`funùiÚ
+ (
+´oduùPageHTML
+) {
+
+348 
+wšdow
+.
+cÚsŞe
+.
+	`log
+("scrapePage(productPageHTML): Getting first…roduct...");
+
+349 if(
+this
+.
+	`sü­eProduùs
+(
+´oduùPageHTML
+è=ğ
+nuÎ
+) {
+
+350 
+wšdow
+.
+cÚsŞe
+.
+	`log
+("scrapePage(productPageHTML): Could‚ot find‡ny…roduct(s)!„eturning...");
+
+351  
+nuÎ
+;
+
+353  
+Œue
+;
+
+364  
+cÚŒŞËrBa£
+;
+
+365 
+	}
+});
+
+	@Util.js
+
+1 
+defše
+(['jqu”y','boÙ¡¿p'], 
+	$funùiÚ
+(
+$
+) {
+
+2 
+funùiÚ
+ 
+	`Ut
+() {
+
+3 
+this
+.
+th©
+ =his;
+
+6 
+Ut
+.
+´ÙÙy³
+ = {
+
+7 
+com´essA¼ay
+: 
+	`funùiÚ
+ (
+Üigš®
+) {
+
+9 if(
+Üigš®
+ ==ğ
+nuÎ
+) {
+
+10  
+nuÎ
+;
+
+13 
+v¬
+ 
+com´es£d
+ = [];
+
+14 
+v¬
+ 
+cİy
+ = 
+Üigš®
+.
+	`¦iû
+(0);
+
+16 
+v¬
+ 
+i
+ = 0; i < 
+Üigš®
+.
+Ëngth
+; i++) {
+
+18 
+v¬
+ 
+myCouÁ
+ = 0;
+
+19 
+v¬
+ 
+w
+ = 0; w < 
+cİy
+.
+Ëngth
+; w++) {
+
+20 ià(
+Üigš®
+[
+i
+] =ğ
+cİy
+[
+w
+]) {
+
+21 
+myCouÁ
+++;
+
+22 
+d–‘e
+ 
+cİy
+[
+w
+];
+
+26 ià(
+myCouÁ
+ > 0) {
+
+27 
+v¬
+ 
+a
+ = 
+Ãw
+ 
+	`Objeù
+();
+
+28 
+a
+.
+v®ue
+ = 
+Üigš®
+[
+i
+];
+
+29 
+a
+.
+couÁ
+ = 
+myCouÁ
+;
+
+30 
+com´es£d
+.
+	`push
+(
+a
+);
+
+34  
+com´es£d
+;
+
+37 
+g‘_commÚ_ªû¡Ü
+: 
+	`funùiÚ
+(
+a
+, 
+b
+) {
+
+38 
+v¬
+ 
+c
+ = 
+	`$
+(
+a
+),
+
+39 
+d
+ = 
+	`$
+(
+b
+),
+
+40 
+şo£¡CommÚAnû¡Ü
+ = 
+c
+.
+	`·»Ás
+().
+	`has
+(
+d
+).
+	`fœ¡
+();
+
+41  
+şo£¡CommÚAnû¡Ü
+;
+
+44 
+g‘XP©h
+: 
+	`funùiÚ
+(
+node
+) {
+
+45 
+v¬
+ 
+comp
+,
+
+46 
+comps
+ = [],
+
+47 
+·»Á
+ = 
+nuÎ
+,
+
+48 
+x·th
+ = '';
+
+50 
+v¬
+ 
+g‘Pos
+ = 
+	`funùiÚ
+(
+node
+) {
+
+51 
+v¬
+ 
+pos™iÚ
+ = 1, 
+curNode
+;
+
+52 ià(
+node
+.
+nodeTy³
+ =ğ
+Node
+.
+ATTRIBUTE_NODE
+) {
+
+53  
+nuÎ
+;
+
+55 
+curNode
+ = 
+node
+.
+´eviousSiblšg
+; curNode; curNode = curNode.previousSibling) {
+
+56 ià(
+curNode
+.
+nodeName
+ =ğ
+node
+.nodeName) {
+
+57 ++
+pos™iÚ
+;
+
+60  
+pos™iÚ
+;
+
+63 ià(
+node
+ 
+š¡ªûof
+ 
+Docum’t
+) {
+
+67 ; 
+node
+ && !Òod
+š¡ªûof
+ 
+Docum’t
+);‚odğnode.
+nodeTy³
+ =ğ
+Node
+.
+ATTRIBUTE_NODE
+ ?‚ode.
+owÃrEËm’t
+ :‚ode.
+·»ÁNode
+) {
+
+68 
+comp
+ = 
+comps
+[comps.
+Ëngth
+] = {};
+
+69 
+node
+.
+nodeTy³
+) {
+
+70 
+Node
+.
+TEXT_NODE
+:
+
+71 
+comp
+.
+Çme
+ = 'text()';
+
+73 
+Node
+.
+ATTRIBUTE_NODE
+:
+
+74 
+comp
+.
+Çme
+ = '@' + 
+node
+.
+nodeName
+;
+
+76 
+Node
+.
+PROCESSING_INSTRUCTION_NODE
+:
+
+77 
+comp
+.
+Çme
+ = 'processing-instruction()';
+
+79 
+Node
+.
+COMMENT_NODE
+:
+
+80 
+comp
+.
+Çme
+ = 'comment()';
+
+82 
+Node
+.
+ELEMENT_NODE
+:
+
+83 
+comp
+.
+Çme
+ = 
+node
+.
+nodeName
+;
+
+86 
+comp
+.
+pos™iÚ
+ = 
+	`g‘Pos
+(
+node
+);
+
+89 
+v¬
+ 
+i
+ = 
+comps
+.
+Ëngth
+ - 1; i >= 0; i--) {
+
+90 
+comp
+ = 
+comps
+[
+i
+];
+
+91 
+x·th
+ +ğ'/' + 
+comp
+.
+Çme
+;
+
+92 ià(
+comp
+.
+pos™iÚ
+ !ğ
+nuÎ
+) {
+
+93 
+x·th
+ +ğ'[' + 
+comp
+.
+pos™iÚ
+ + ']';
+
+97  
+x·th
+;
+
+101 
+g‘XP©h2
+: 
+	`funùiÚ
+(
+node
+){
+
+102 
+v¬
+ 
+iäame
+ = 
+docum’t
+.
+	`g‘EËm’tsByTagName
+('iframe')[0],
+
+103 
+doc
+ = 
+iäame
+.
+cÚ‹ÁWšdow
+.
+docum’t
+;
+
+105 if(
+node
+.
+	`hasA‰ribu‹
+("id")){
+
+106  '//' + 
+node
+.
+gName
+ + '[@id="' +‚ode.
+id
+ + '"]';
+
+109 if(
+node
+.
+	`hasA‰ribu‹
+("class")){
+
+110  '//' + 
+node
+.
+gName
+ + '[@şass="' +‚ode.
+	`g‘A‰ribu‹
+("class") + '"]';
+
+121 
+g‘XP©hFÜEËm’t
+: 
+	`funùiÚ
+(
+–
+, 
+xml
+) {
+
+122 
+v¬
+ 
+x·th
+ = '';
+
+123 
+v¬
+ 
+pos
+, 
+‹mp™em2
+;
+
+125 
+–
+ !=ğ
+xml
+.
+docum’tEËm’t
+) {
+
+126 
+pos
+ = 0;
+
+127 
+‹mp™em2
+ = 
+–
+;
+
+128 
+‹mp™em2
+) {
+
+129 ià(
+‹mp™em2
+.
+nodeTy³
+ ==ğ1 &&emp™em2.
+nodeName
+ ==ğ
+–
+.nodeName) {
+
+130 
+pos
+ += 1;
+
+132 
+‹mp™em2
+ =emp™em2.
+´eviousSiblšg
+;
+
+135 if(
+–
+ !=ğ
+nuÎ
+) {
+
+136 
+x·th
+ = 
+–
+.
+nodeName
++"["+
+pos
++']'+'/'+xpath;
+
+137 
+–
+ =ƒl.
+·»ÁNode
+;
+
+142 
+x·th
+ = '/'+
+xml
+.
+docum’tEËm’t
+.
+nodeName
++'/'+xpath;
+
+143 
+x·th
+ = x·th.
+	`»¶aû
+(/\/
+$
+/, '');
+
+144  
+x·th
+;
+
+147 
+g‘V›w
+: 
+	`funùiÚ
+ (
+node
+, 
+doc
+) {
+
+148 ià(
+node
+ &&‚ode.
+nodeTy³
+==1) {
+
+149 
+v¬
+ 
+v›w
+ = 
+doc
+.
+deçuÉV›w
+ ? doc.deçuÉV›w.
+	`g‘Compu‹dStyË
+(
+node
+, 
+nuÎ
+):node.
+cu¼’tStyË
+;
+
+152 
+v¬
+ 
+v›w
+ = 
+nuÎ
+;
+
+154  
+v›w
+;
+
+157 
+g‘StyË
+: 
+	`funùiÚ
+ (
+node
+, 
+doc
+) {
+
+159 
+v¬
+ 
+»suÉ
+ = {};
+
+160 
+v¬
+ 
+ncs
+ = 
+this
+.
+	`g‘V›w
+(
+node
+, 
+doc
+);
+
+161 ià(!
+ncs
+è 
+»suÉ
+;
+
+163 
+v¬
+ 
+i
+=0; i<
+ncs
+.
+Ëngth
+; ++i) {
+
+164 
+v¬
+ 
+e
+ = 
+ncs
+.
+	`™em
+(
+i
+);
+
+165 ià(
+e
+==
+undefšed
+) ;
+
+166 ià(
+e
+.
+	`¡¬tsW™h
+('-moz-')) ;
+
+167 
+v¬
+ 
+v
+ = 
+ncs
+.
+	`g‘Prİ”tyV®ue
+(
+e
+);
+
+168 
+»suÉ
+[
+e
+] = 
+v
+;
+
+170  
+»suÉ
+;
+
+174  
+Ut
+;
+
+175 
+	}
+});
+
+	@jqueryplugin.js
+
+1 (
+	$funùiÚ
+ (
+çùÜy
+) {
+
+2 ià(
+ty³of
+ 
+defše
+ ==ğ'funùiÚ' && defše.
+amd
+) {
+
+4 
+	`defše
+(['jqu”y'], 
+çùÜy
+);
+
+7 
+	`çùÜy
+(
+jQu”y
+);
+
+9 
+	}
+}(
+	$funùiÚ
+ (
+$
+) {
+
+11 
+$
+.
+â
+.
+x·thEv®u©e
+ = 
+	`funùiÚ
+ (
+x·thEx´essiÚ
+) {
+
+14 
+$this
+ = 
+this
+.
+	`fœ¡
+();
+
+17 
+x·thResuÉ
+ = 
+this
+[0].
+	`ev®u©e
+(
+x·thEx´essiÚ
+,his[0], 
+nuÎ
+, 
+XP©hResuÉ
+.
+ORDERED_NODE_ITERATOR_TYPE
+,‚ull);
+
+18 
+»suÉ
+ = [];
+
+20 
+–em
+ = 
+x·thResuÉ
+.
+	`™”©eNext
+()) {
+
+21 
+»suÉ
+.
+	`push
+(
+–em
+);
+
+24 
+$»suÉ
+ = 
+	`jQu”y
+([]).
+	`pushSck
+Ğ
+»suÉ
+ );
+
+25  
+$»suÉ
+;
+
+29 
+	}
+}));
+
+	@scraper_controller.js
+
+1 
+defše
+(['./Sü­”'], 
+	$funùiÚ
+ (
+Sü­”
+) {
+
+2 
+v¬
+ 
+sü­”_cÚŒŞËr
+ = 
+Ãw
+ 
+	`Sü­”
+('Controller 1');
+
+3  
+sü­”_cÚŒŞËr
+;
+
+4 
+	}
+});
+
+	@util_controller.js
+
+1 
+defše
+(['./Ut'], 
+	$funùiÚ
+ (
+Ut
+) {
+
+2 
+v¬
+ 
+ut
+ = 
+Ãw
+ 
+	`Ut
+();
+
+3  
+ut
+;
+
+4 
+	}
+});
+
+	@
+1
+.
+1
+/usr/include
+5
+76
+Scraper.js
+Util.js
+jqueryplugin.js
+scraper_controller.js
+util_controller.js

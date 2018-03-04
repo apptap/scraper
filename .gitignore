@@ -1,0 +1,9 @@
+*.zip
+*.pdf
+*.tar.gz
+*.tar.xz
+*.txt
+webDebugExample
+phpMyAdmin
+PHP_Downloader
+php-doc
